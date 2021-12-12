@@ -1,0 +1,22 @@
+If the website is implemented nicely and has unique and static ids, then always use the ids.
+Same thing applies to name.
+
+If not then I usually use XPath.
+CSS is a little better in performance but it is hardly noticeable.
+CSS cannot be used in all the scenarios, XPath provides a consistent way of finding elements across the project.
+
+When we find element with tag name, it usually finds the 1st one if there are multiple tags present.
+
+So if you know that you would be working with the 1st available element then you can use it. If that's not what you want then always prefer to find unique ids/name/xpath to find elements on a web page.
+
+1. All locators will give precise location, other than tag name and class name.
+2. Id and XPath are the most used. Id is the most efficient, but it may not be available in all the elements. XPath is the most comprehensive, it can be used in all the conditions.
+
+ID - fastest
+NAme
+ClassNAme
+Xpath - widely used
+Link Text
+Partial Link Text
+TAG NAme
+CSS Selector- widely used 

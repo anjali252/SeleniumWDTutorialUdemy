@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression TestSuite">
+	<test name="GroupsDemo">
+		<groups>
+			<define name="all">
+				<include name="sedan"></include>
+				<include name="suv"></include>
+				<include name="bikes"></include>
+			</define>
+			<define name="noBikes">
+				<include name="sedan"></include>
+				<include name="suv"></include>
+			</define>
+			<run>
+				<include name="noBikes"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="advanced_testNG.TestNG_Grouping"></class>
+		</classes>
+	</test>
+</suite>

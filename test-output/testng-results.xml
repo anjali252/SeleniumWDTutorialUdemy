@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="77" started-at="2021-12-11T13:08:39Z" finished-at="2021-12-11T13:08:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="77" started-at="2021-12-11T13:08:39Z" finished-at="2021-12-11T13:08:39Z">
+      <class name="advanced_testNG.TestNG_DependentTestCases">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:advanced_testNG.TestNG_DependentTestCases@f6efaab]" name="beforeClass" is-config="true" duration-ms="18" started-at="2021-12-11T13:08:39Z" finished-at="2021-12-11T13:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testMethod2()[pri:0, instance:advanced_testNG.TestNG_DependentTestCases@f6efaab]" name="testMethod2" duration-ms="8" started-at="2021-12-11T13:08:39Z" finished-at="2021-12-11T13:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+        <test-method status="PASS" signature="testMethod1()[pri:0, instance:advanced_testNG.TestNG_DependentTestCases@f6efaab]" name="testMethod1" duration-ms="2" started-at="2021-12-11T13:08:39Z" depends-on-methods="advanced_testNG.TestNG_DependentTestCases.testMethod2" finished-at="2021-12-11T13:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method status="PASS" signature="testMethod3()[pri:0, instance:advanced_testNG.TestNG_DependentTestCases@f6efaab]" name="testMethod3" duration-ms="3" started-at="2021-12-11T13:08:39Z" depends-on-methods="advanced_testNG.TestNG_DependentTestCases.testMethod1" finished-at="2021-12-11T13:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod3 -->
+        <test-method status="PASS" signature="testMethod4()[pri:0, instance:advanced_testNG.TestNG_DependentTestCases@f6efaab]" name="testMethod4" duration-ms="2" started-at="2021-12-11T13:08:39Z" depends-on-methods="advanced_testNG.TestNG_DependentTestCases.testMethod3" finished-at="2021-12-11T13:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod4 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:advanced_testNG.TestNG_DependentTestCases@f6efaab]" name="afterClass" is-config="true" duration-ms="1" started-at="2021-12-11T13:08:39Z" finished-at="2021-12-11T13:08:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- advanced_testNG.TestNG_DependentTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
