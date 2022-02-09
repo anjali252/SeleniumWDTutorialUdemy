@@ -16,8 +16,7 @@ public class BasicActions {
 
 	@Before
 	public void setUp() throws Exception {
-//		FindByIdXPath.disableSeleniumLogs();
-		System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\Driver\\chromedriver.exe");
+		FindByIdXPath.disableSeleniumLogs();
 		wd = new ChromeDriver();
 		baseURL = "https://learn.letskodeit.com/";
 		wd.manage().window().maximize();
