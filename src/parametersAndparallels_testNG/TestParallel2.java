@@ -1,6 +1,7 @@
 package parametersAndparallels_testNG;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class TestParallel2 {
 	@Test

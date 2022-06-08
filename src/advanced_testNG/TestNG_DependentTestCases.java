@@ -3,6 +3,10 @@
  */
 package advanced_testNG;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.AfterClass;
@@ -39,7 +43,7 @@ public class TestNG_DependentTestCases {
 	public void testMethod2() {
 		System.out.println("TestNG_Priority -> TestMethod2");
 		int result = obj.sumNo(1, 2);
-		assertEquals(result, 3);
+		AssertJUnit.assertEquals(result, 3);
 
 	}
 

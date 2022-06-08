@@ -1,10 +1,10 @@
 package page.classes;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -14,8 +14,9 @@ public class FrameWorkTC {
 	public String baseURL;
 	SearchPageFactory spf;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\Driver\\chromedriver.exe");
 		wd = new ChromeDriver();
 
 		baseURL = "https://www.cleartrip.com/";
@@ -28,17 +29,24 @@ public class FrameWorkTC {
 	}
 
 	@Test
-	public void test() {
+	public void test() throws InterruptedException {
+		if (spf.checkLoginBoxPresence()) {
+			spf.closeLoginBox();
+		}
 		spf.setSrcTextBox("New Delhi");
+		Thread.sleep(3000);
+		spf.clickCitySuggestion();
 		spf.setDestTextBox("New York");
-		spf.setDepartureCalender("Wed, 30 Sep, 2020");
+		Thread.sleep(3000);
+		spf.clickCitySuggestion();
+		spf.setDepartureCalender("Fri, Sep 30");
 		spf.clickSearchBtn();
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
-		Thread.sleep(3000);
-		wd.quit();
+//		Thread.sleep(3000);
+//		wd.quit();
 	}
 
 }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Logs TestSuite">
+	<test name="Reports Test">
+		<classes>
+			<class name="reporterlogs_htmlreports_testNG.ReportsAndLogs"></class>
+		</classes>
+	</test>
+</suite>

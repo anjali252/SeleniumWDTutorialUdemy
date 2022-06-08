@@ -3,11 +3,11 @@
  */
 package workingwithactionsclass;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +28,7 @@ public class MouseHoverActions {
 	String baseURL;
 	JavascriptExecutor jse;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 
 		wd = new ChromeDriver();
@@ -59,7 +59,7 @@ public class MouseHoverActions {
 
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 
 		Thread.sleep(2000);

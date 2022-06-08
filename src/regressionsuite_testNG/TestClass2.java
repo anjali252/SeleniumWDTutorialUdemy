@@ -1,6 +1,9 @@
 package regressionsuite_testNG;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +12,7 @@ import org.testng.annotations.Test;
 import base_testNG.BaseTestSuite;
 
 public class TestClass2 extends BaseTestSuite {
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() {
 		System.out.println("TestClass2 -> This method runs before class");

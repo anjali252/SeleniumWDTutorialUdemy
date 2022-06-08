@@ -3,12 +3,12 @@
  */
 package switchwinandiframes;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,7 +26,7 @@ public class SwitchWindow {
 	WebDriver wd;
 	String baseURL;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 
 		wd = new ChromeDriver();
@@ -70,7 +70,7 @@ public class SwitchWindow {
 
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 
 		Thread.sleep(3000);

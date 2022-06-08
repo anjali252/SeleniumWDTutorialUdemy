@@ -55,9 +55,10 @@ public class ReplaceString {
 			}
 		}
 	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		modifyFile("E:\\Eclipse_Workspace\\SeleniumWDTutorialUdemy\\StudentFile.txt", "95", "85");
+		modifyFile(System.getProperty("user.dir") + "\\StudentFile.txt", "95", "85");
 
 		System.out.println("done");
 	}

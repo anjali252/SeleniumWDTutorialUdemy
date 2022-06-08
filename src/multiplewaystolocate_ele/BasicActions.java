@@ -2,21 +2,22 @@ package multiplewaystolocate_ele;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class BasicActions {
 
 	WebDriver wd;
 	String baseURL;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		FindByIdXPath.disableSeleniumLogs();
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\Driver\\chromedriver.exe");
 		wd = new ChromeDriver();
 		baseURL = "https://learn.letskodeit.com/";
 		wd.manage().window().maximize();
@@ -40,7 +41,7 @@ public class BasicActions {
 		System.out.println("Cleared User email");
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 	}
 

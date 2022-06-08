@@ -1,8 +1,8 @@
 package handlesynchronizeissue;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +14,7 @@ public class ExplicitWaitWithUtilityDemo {
 	String baseURL;
 	WaitTypes wt;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 
 		wd = new ChromeDriver();
@@ -36,7 +36,7 @@ public class ExplicitWaitWithUtilityDemo {
 		wt.clickWhenReady(By.name("commit"), 3);
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 
 		// Thread.sleep(3000);

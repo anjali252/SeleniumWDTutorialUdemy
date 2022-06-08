@@ -1,10 +1,10 @@
 package multiplewaystolocate_ele;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -13,7 +13,7 @@ public class NavigatingBwPages {
 	WebDriver wd;
 	String baseURL;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		FindByIdXPath.disableSeleniumLogs();
 		wd = new ChromeDriver();
@@ -59,7 +59,7 @@ public class NavigatingBwPages {
 		System.out.println("Pg SRc=" + pgSrc);
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		wd.quit();
 	}

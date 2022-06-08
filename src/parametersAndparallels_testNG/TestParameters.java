@@ -1,11 +1,13 @@
 package parametersAndparallels_testNG;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TestParameters {
 
+	@BeforeMethod
 	@BeforeClass
 	@Parameters({ "browser", "platform" })
 	public void setUp(String browser, String platform) {

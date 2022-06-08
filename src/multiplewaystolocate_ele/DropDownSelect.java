@@ -1,11 +1,11 @@
 package multiplewaystolocate_ele;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,7 @@ public class DropDownSelect {
 	WebDriver wd;
 	String baseURL;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		FindByIdXPath.disableSeleniumLogs();
 		wd = new ChromeDriver();
@@ -61,7 +61,7 @@ public class DropDownSelect {
 
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(2000);
 		wd.quit();

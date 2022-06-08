@@ -1,10 +1,10 @@
 package keypressevents;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +17,7 @@ public class KeyPressDemo3 {
 	String baseURL;
 	JavascriptExecutor jse;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 
 		wd = new ChromeDriver();
@@ -37,7 +37,7 @@ public class KeyPressDemo3 {
 		a.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).perform();
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 
 		Thread.sleep(2000);

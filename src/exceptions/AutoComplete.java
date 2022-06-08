@@ -3,14 +3,14 @@ package exceptions;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class AutoComplete {
 
@@ -18,8 +18,9 @@ public class AutoComplete {
 	String baseURL;
 	JavascriptExecutor jse;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\Driver\\chromedriver.exe");
 		wd = new ChromeDriver();
 		baseURL = "https://www.goibibo.com/";
 
@@ -65,7 +66,7 @@ public class AutoComplete {
 
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 
 		Thread.sleep(2000);

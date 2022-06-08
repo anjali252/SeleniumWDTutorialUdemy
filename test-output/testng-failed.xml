@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Parameters TestSuite]">
-  <test thread-count="5" name="Test1(failed)">
-    <parameter name="response" value="201 200"/>
-    <parameter name="browser" value="chrome"/>
-    <parameter name="platform" value="windows"/>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="parametersAndparallels_testNG.TestParameters">
+      <class name="crossbrowsertesting_seleniumgrid2.SeleniumGrid_ParallelTest">
         <methods>
-          <include name="testMethod1" invocation-numbers="0"/>
+          <include name="test"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- parametersAndparallels_testNG.TestParameters -->
+      </class> <!-- crossbrowsertesting_seleniumgrid2.SeleniumGrid_ParallelTest -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Parameters TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

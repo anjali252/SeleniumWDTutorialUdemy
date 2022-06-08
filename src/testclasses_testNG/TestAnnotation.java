@@ -1,6 +1,7 @@
 package testclasses_testNG;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import appcode_testNG.SomeClass2Test;
 

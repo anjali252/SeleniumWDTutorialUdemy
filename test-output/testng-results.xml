@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel TestSuite" duration-ms="24268" started-at="2022-01-01T16:27:22Z" finished-at="2022-01-01T16:27:46Z">
+  <suite name="Default suite" duration-ms="44351" started-at="2022-06-05T18:08:27 IST" finished-at="2022-06-05T18:09:12 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="12099" started-at="2022-01-01T16:27:22Z" finished-at="2022-01-01T16:27:34Z">
-      <class name="parametersAndparallels_testNG.TestParallel1">
-        <test-method status="PASS" signature="testMethod1()[pri:0, instance:parametersAndparallels_testNG.TestParallel1@38bc8ab5]" name="testMethod1" duration-ms="6024" started-at="2022-01-01T16:27:22Z" finished-at="2022-01-01T16:27:28Z">
+    <test name="Default test" duration-ms="44351" started-at="2022-06-05T18:08:27 IST" finished-at="2022-06-05T18:09:12 IST">
+      <class name="crossbrowsertesting_seleniumgrid2.SeleniumGrid_ParallelTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:crossbrowsertesting_seleniumgrid2.SeleniumGrid_ParallelTest@6b19b79]" name="setUp" is-config="true" duration-ms="25299" started-at="2022-06-05T18:08:27 IST" finished-at="2022-06-05T18:08:53 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method status="PASS" signature="testMethod2()[pri:0, instance:parametersAndparallels_testNG.TestParallel1@38bc8ab5]" name="testMethod2" duration-ms="6019" started-at="2022-01-01T16:27:28Z" finished-at="2022-01-01T16:27:34Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:0, instance:crossbrowsertesting_seleniumgrid2.SeleniumGrid_ParallelTest@6b19b79]" name="test" duration-ms="12402" started-at="2022-06-05T18:08:53 IST" finished-at="2022-06-05T18:09:05 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod2 -->
-      </class> <!-- parametersAndparallels_testNG.TestParallel1 -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="12038" started-at="2022-01-01T16:27:34Z" finished-at="2022-01-01T16:27:46Z">
-      <class name="parametersAndparallels_testNG.TestParallel2">
-        <test-method status="PASS" signature="testMethod1()[pri:0, instance:parametersAndparallels_testNG.TestParallel2@6121c9d6]" name="testMethod1" duration-ms="6015" started-at="2022-01-01T16:27:34Z" finished-at="2022-01-01T16:27:40Z">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:crossbrowsertesting_seleniumgrid2.SeleniumGrid_ParallelTest@6b19b79]" name="tearDown" is-config="true" duration-ms="6407" started-at="2022-06-05T18:09:05 IST" finished-at="2022-06-05T18:09:12 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMethod1 -->
-        <test-method status="PASS" signature="testMethod2()[pri:0, instance:parametersAndparallels_testNG.TestParallel2@6121c9d6]" name="testMethod2" duration-ms="6007" started-at="2022-01-01T16:27:40Z" finished-at="2022-01-01T16:27:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMethod2 -->
-      </class> <!-- parametersAndparallels_testNG.TestParallel2 -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Parallel TestSuite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- crossbrowsertesting_seleniumgrid2.SeleniumGrid_ParallelTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

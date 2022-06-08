@@ -1,10 +1,10 @@
 package handlesynchronizeissue;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class ImplicitWaitDemp {
 	WebDriver wd;
 	String baseURL;
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		wd = new ChromeDriver();
 		baseURL = "https://learn.letskodeit.com/";
@@ -28,7 +28,7 @@ public class ImplicitWaitDemp {
 		wd.findElement(By.xpath("//input[@id='user_email']")).sendKeys("letskodeit@gmail.com");
 	}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(3000);
 		wd.quit();
